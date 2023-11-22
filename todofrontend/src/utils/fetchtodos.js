@@ -13,7 +13,7 @@ export function fetchDataWithAuthentication(page) {
         'Authorization': token,
       });
   
-      fetch(`https://todo-app-lovat-seven.vercel.app/fetch-tasks?page=${page}`, { method: 'GET', headers })
+      fetch(`https://todo-backend-vvqt.onrender.com/fetch-tasks?page=${page}`, { method: 'GET', headers })
         .then((response) => {
           if (!response.ok) {
             reject('Request failed with status: ' + response.status);

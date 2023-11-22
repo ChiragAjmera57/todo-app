@@ -3,7 +3,7 @@ import axios from "axios"
 
 export function signUpUser({name,fatherName,email,mobile,password}) {
   return new Promise((resolve, reject) => {
-    const apiUrl = 'https://todo-app-lovat-seven.vercel.app/signup';
+    const apiUrl = 'https://todo-backend-vvqt.onrender.com/signup';
     const userData = {
       name,fatherName,email,mobile,password
     };
