@@ -10,7 +10,13 @@ const authenticateUser = require('./middleware/UserAuthenticate');
 const Task = require('./modal/task.modal');
 const app = express()
 app.use(express.json())
-app.use(cors())
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
+
 app.get('/',(req,res)=>{
     res.send('hii')
 })
