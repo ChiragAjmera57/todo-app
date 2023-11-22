@@ -1,7 +1,7 @@
 const express = require('express');
 const connectToMongoDB = require('./config/mongo.connect');
 const User = require('./modal/user.modal');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { ObjectId } = require('mongodb');
 
