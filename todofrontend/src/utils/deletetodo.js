@@ -7,7 +7,7 @@ export async function deleteTaskWithToken(taskId) {
     }
   
     // Define the URL for the DELETE request, including the task ID to delete
-    const url = `http://localhost:8080/delete-task/${taskId}`;
+    const url = `https://todo-app-lovat-seven.vercel.app/delete-task/${taskId}`;
   
     // Define the headers for the request, including the authentication token
     const headers = {
